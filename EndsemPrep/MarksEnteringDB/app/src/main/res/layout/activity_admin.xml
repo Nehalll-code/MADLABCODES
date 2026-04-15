@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:title="Admin Settings" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin View: Edit Subjects"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Subject 1 Edit -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/etAdminSubj1Name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Subj 1 Name"/>
+                <EditText android:id="@+id/etAdminSubj1Credits" android:layout_width="60dp" android:layout_height="wrap_content" android:hint="Credits" android:inputType="number"/>
+            </LinearLayout>
+
+            <!-- Subject 2 Edit -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/etAdminSubj2Name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Subj 2 Name"/>
+                <EditText android:id="@+id/etAdminSubj2Credits" android:layout_width="60dp" android:layout_height="wrap_content" android:hint="Credits" android:inputType="number"/>
+            </LinearLayout>
+
+            <!-- Subject 3 Edit -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/etAdminSubj3Name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Subj 3 Name"/>
+                <EditText android:id="@+id/etAdminSubj3Credits" android:layout_width="60dp" android:layout_height="wrap_content" android:hint="Credits" android:inputType="number"/>
+            </LinearLayout>
+
+            <!-- Subject 4 Edit -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/etAdminSubj4Name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Subj 4 Name"/>
+                <EditText android:id="@+id/etAdminSubj4Credits" android:layout_width="60dp" android:layout_height="wrap_content" android:hint="Credits" android:inputType="number"/>
+            </LinearLayout>
+
+            <!-- Subject 5 Edit -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+                <EditText android:id="@+id/etAdminSubj5Name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:hint="Subj 5 Name"/>
+                <EditText android:id="@+id/etAdminSubj5Credits" android:layout_width="60dp" android:layout_height="wrap_content" android:hint="Credits" android:inputType="number"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSaveAdminChanges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Changes"
+                android:layout_marginTop="24dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

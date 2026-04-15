@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MegaCombined">
+        
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".VehicleModuleActivity" />
+        <activity android:name=".VehicleUserDetailsActivity" />
+        <activity android:name=".VehicleServiceDetailsActivity" />
+        <activity android:name=".VehicleSummaryActivity" />
+        <activity android:name=".VehicleListActivity" />
+        
+        <activity android:name=".CourseModuleActivity" />
+        <activity android:name=".CourseUserDetailsActivity" />
+        <activity android:name=".CourseDetailsActivity" />
+        <activity android:name=".CourseSummaryActivity" />
+        <activity android:name=".CourseListActivity" />
+        
+        <activity android:name=".ParkingModuleActivity" />
+        <activity android:name=".ParkingUserDetailsActivity" />
+        <activity android:name=".ParkingDetailsActivity" />
+        <activity android:name=".ParkingSummaryActivity" />
+        <activity android:name=".ParkingListActivity" />
+        
+        <activity android:name=".AllBookingsActivity" />
+        <activity android:name=".AboutActivity" />
+        
+    </application>
+
+</manifest>

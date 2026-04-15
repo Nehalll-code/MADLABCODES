@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarGrades"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:titleTextColor="@android:color/white"
+        app:title="Enter Grades" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/llGradesContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tvStudentNameDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Subject 1 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <CheckBox android:id="@+id/cbSubj1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+                <TextView android:id="@+id/tvSubj1Name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Subj 1"/>
+                <EditText android:id="@+id/etSubj1Marks" android:layout_width="80dp" android:layout_height="wrap_content" android:hint="0-10" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvSubj1Credits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" (3) "/>
+            </LinearLayout>
+
+            <!-- Subject 2 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <CheckBox android:id="@+id/cbSubj2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+                <TextView android:id="@+id/tvSubj2Name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Subj 2"/>
+                <EditText android:id="@+id/etSubj2Marks" android:layout_width="80dp" android:layout_height="wrap_content" android:hint="0-10" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvSubj2Credits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" (3) "/>
+            </LinearLayout>
+
+            <!-- Subject 3 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <CheckBox android:id="@+id/cbSubj3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+                <TextView android:id="@+id/tvSubj3Name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Subj 3"/>
+                <EditText android:id="@+id/etSubj3Marks" android:layout_width="80dp" android:layout_height="wrap_content" android:hint="0-10" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvSubj3Credits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" (3) "/>
+            </LinearLayout>
+
+            <!-- Subject 4 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <CheckBox android:id="@+id/cbSubj4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+                <TextView android:id="@+id/tvSubj4Name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Subj 4"/>
+                <EditText android:id="@+id/etSubj4Marks" android:layout_width="80dp" android:layout_height="wrap_content" android:hint="0-10" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvSubj4Credits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" (3) "/>
+            </LinearLayout>
+
+            <!-- Subject 5 -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+                <CheckBox android:id="@+id/cbSubj5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true"/>
+                <TextView android:id="@+id/tvSubj5Name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Subj 5"/>
+                <EditText android:id="@+id/etSubj5Marks" android:layout_width="80dp" android:layout_height="wrap_content" android:hint="0-10" android:inputType="numberDecimal"/>
+                <TextView android:id="@+id/tvSubj5Credits" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" (3) "/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSubmitGrades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate CGPA"
+                android:layout_marginTop="24dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

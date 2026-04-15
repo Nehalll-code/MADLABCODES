@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Information"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView android:id="@+id/tvDetailName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name: " android:layout_marginBottom="5dp"/>
+        <TextView android:id="@+id/tvDetailAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Age: " android:layout_marginBottom="5dp"/>
+        <TextView android:id="@+id/tvDetailEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email: " android:layout_marginBottom="5dp"/>
+        <TextView android:id="@+id/tvDetailType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Type: " android:layout_marginBottom="5dp"/>
+        <TextView android:id="@+id/tvDetailKyc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KYC: " android:layout_marginBottom="5dp"/>
+        <TextView android:id="@+id/tvDetailBranch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Branch: " android:layout_marginBottom="5dp"/>
+        <TextView android:id="@+id/tvDetailServices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Services: " android:layout_marginBottom="5dp"/>
+        <TextView android:id="@+id/tvDetailDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date/Time: " android:layout_marginBottom="5dp"/>
+        <TextView android:id="@+id/tvDetailMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mode: " android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnEditCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Customer"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:id="@+id/btnDeleteCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete Customer Record"
+            android:textColor="#FF0000"/>
+
+    </LinearLayout>
+</ScrollView>

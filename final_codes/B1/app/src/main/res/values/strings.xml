@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">University Admission</string>
+    <string-array name="course_array">
+        <item>Computer Science</item>
+        <item>Mechanical Engineering</item>
+        <item>Electrical Engineering</item>
+        <item>Civil Engineering</item>
+        <item>Business Administration</item>
+    </string-array>
+</resources>

@@ -1,0 +1,119 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- ===================== TITLE ===================== -->
+        <TextView
+            android:text="MY APP TITLE"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- ===================== TEXT INPUT ===================== -->
+        <EditText
+            android:id="@+id/et1"
+            android:hint="Enter value 1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/et2"
+            android:hint="Enter value 2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ===================== SPINNER ===================== -->
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ===================== DATE ===================== -->
+        <Button
+            android:id="@+id/btnDate"
+            android:text="Select Date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ===================== TIME ===================== -->
+        <Button
+            android:id="@+id/btnTime"
+            android:text="Select Time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ===================== RADIO ===================== -->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/rbA"
+                android:text="Option A"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                android:id="@+id/rbB"
+                android:text="Option B"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        </RadioGroup>
+
+        <!-- ===================== CHECKBOX ===================== -->
+        <CheckBox
+            android:id="@+id/cb1"
+            android:text="Choice 1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cb2"
+            android:text="Choice 2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cb3"
+            android:text="Choice 3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- ===================== TOGGLE ===================== -->
+        <ToggleButton
+            android:id="@+id/toggle"
+            android:textOn="ON"
+            android:textOff="OFF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- ===================== MAIN BUTTON ===================== -->
+        <Button
+            android:id="@+id/btnInsert"
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ===================== INTENT BUTTON ===================== -->
+        <Button
+            android:id="@+id/btnNext"
+            android:text="Go To Next Screen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- ===================== LIST ===================== -->
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+    </LinearLayout>
+</ScrollView>

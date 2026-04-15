@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registration Summary"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="24dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            android:layout_marginBottom="32dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView android:id="@+id/tvSummaryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+                <TextView android:id="@+id/tvSummaryAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Age: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+                <TextView android:id="@+id/tvSummaryEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+                <TextView android:id="@+id/tvSummaryCourse" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Course: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+                <TextView android:id="@+id/tvSummaryStatus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Status: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+                <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#DDDDDD" android:layout_marginVertical="12dp"/>
+                <TextView android:id="@+id/tvSummaryDept" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Department: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+                <TextView android:id="@+id/tvSummarySubjects" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Subjects: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+                <TextView android:id="@+id/tvSummaryDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Admission Date: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+                <TextView android:id="@+id/tvSummarySection" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Section: " android:textSize="16sp"/>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Submit Registration"
+            android:layout_marginBottom="16dp"
+            app:cornerRadius="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnModify"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Modify Details"
+            app:cornerRadius="12dp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PERSONAL DETAILS"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_header"
+            android:layout_marginBottom="25dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Full Name:"
+            android:textColor="@color/label_color"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="e.g. John Doe"
+            android:inputType="textPersonName"
+            android:background="@color/edit_text_bg"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Age:"
+            android:textColor="@color/label_color"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/etAge"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Minimum 18"
+            android:inputType="number"
+            android:background="@color/edit_text_bg"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Email Address:"
+            android:textColor="@color/label_color"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="example@mail.com"
+            android:inputType="textEmailAddress"
+            android:background="@color/edit_text_bg"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="20dp"
+            android:importantForAutofill="no"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Account Type:"
+            android:textColor="@color/label_color"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <RadioGroup
+            android:id="@+id/rgAccountType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <RadioButton android:id="@+id/rbSavings" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Savings Account" android:checked="true" android:textColor="@color/black"/>
+            <RadioButton android:id="@+id/rbCurrent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Current Account" android:textColor="@color/black"/>
+            <RadioButton android:id="@+id/rbFixed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fixed Deposit" android:textColor="@color/black"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KYC Status:"
+            android:textColor="@color/label_color"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+        <ToggleButton
+            android:id="@+id/toggleKyc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Verified"
+            android:textOff="Not Verified"
+            android:layout_marginBottom="30dp"/>
+
+        <Button
+            android:id="@+id/btnNextPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="NEXT STEP"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/blue_header"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>

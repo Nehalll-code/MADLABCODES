@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_add_task_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddTaskActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="New Task" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/et_task_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Task Title"
+                android:inputType="text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Assigned Employee" />
+
+            <Spinner
+                android:id="@+id/sp_employee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Department" />
+
+            <RadioGroup
+                android:id="@+id/rg_department"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/rb_operations" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Operations" />
+                <RadioButton android:id="@+id/rb_logistics" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Logistics" />
+                <RadioButton android:id="@+id/rb_administration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Administration" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Priority" />
+
+            <RadioGroup
+                android:id="@+id/rg_priority"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/rb_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Low" />
+                <RadioButton android:id="@+id/rb_medium" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium" />
+                <RadioButton android:id="@+id/rb_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="High" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/et_deadline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:focusable="false"
+                android:hint="Select Deadline Date"
+                android:inputType="none" />
+
+            <EditText
+                android:id="@+id/et_scheduled_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:focusable="false"
+                android:hint="Select Scheduled Time"
+                android:inputType="none" />
+
+            <CheckBox
+                android:id="@+id/cb_requires_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Requires Equipment" />
+
+            <EditText
+                android:id="@+id/et_equipment_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Equipment Name"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/sw_urgent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Mark as Urgent" />
+
+            <ToggleButton
+                android:id="@+id/tb_urgent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textOn="Urgent Status: ON"
+                android:textOff="Urgent Status: OFF" />
+
+            <EditText
+                android:id="@+id/et_notes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="top|start"
+                android:hint="Notes"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:maxLength="200" />
+
+            <TextView
+                android:id="@+id/tv_char_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:text="0/200" />
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Submit Task" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

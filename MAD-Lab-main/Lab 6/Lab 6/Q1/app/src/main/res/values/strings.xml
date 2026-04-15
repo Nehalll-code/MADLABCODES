@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">XYZ Fitness Center</string>
+    <string name="welcome_msg">Welcome to XYZ Fitness Center! Your journey to fitness starts here. Please use the menu to explore our plans, meet our trainers, or view membership options.</string>
+    <string name="about_content">XYZ Fitness Center has been providing top-notch fitness services since 2010. Our mission is to provide a supportive and motivating environment for individuals of all fitness levels. We are dedicated to your health and well-being with state-of-the-art equipment and certified professionals.</string>
+    <string name="contact_content">Contact us at:\n\nPhone: +1 234 567 890\nEmail: contact@xyzfitness.com\nAddress: 123 Fitness St, Health City, HC 12345\n\nHours: Mon-Sun: 6:00 AM - 11:00 PM</string>
+    <string name="workout_plans_content">Our Workout Programs:\n\n1. Weight Loss: Focused on high-intensity interval training and nutrition.\n2. Cardio: Improve your heart health and endurance.\n3. Muscle Building: Strength training and hypertrophy programs.\n4. Yoga &amp; Flexibility: Balance your body and mind.\n5. HIIT: Short, intense bursts of exercise.</string>
+    <string name="membership_content">Membership Packages:\n\n• Basic: $20/month\n  - Includes Gym access and Locker room use.\n\n• Premium: $50/month\n  - Includes Basic features + All Group Classes.\n\n• VIP: $100/month\n  - Includes Premium features + 2 Personal Trainer sessions per month.</string>
+    
+    <string name="trainer1_info">John Doe\nStrength Training Specialist</string>
+    <string name="trainer2_info">Jane Smith\nYoga &amp; Pilates Master</string>
+    <string name="trainer3_info">Mike Ross\nCardio and Endurance Expert</string>
+
+    <string name="menu_home">Homepage</string>
+    <string name="menu_about">About Us</string>
+    <string name="menu_contact">Contact Us</string>
+    <string name="menu_workout">Workout Plans</string>
+    <string name="menu_trainers">Trainers</string>
+    <string name="menu_membership">Membership</string>
+</resources>

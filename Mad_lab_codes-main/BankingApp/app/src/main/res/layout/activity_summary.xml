@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_grey"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="REVIEW SUMMARY"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/blue_header"
+            android:layout_marginBottom="25dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:background="@color/white"
+            android:layout_marginBottom="25dp">
+
+            <TextView android:id="@+id/tvSummaryName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name: " android:textColor="@color/black" android:textSize="17sp" android:layout_marginBottom="10dp"/>
+            <TextView android:id="@+id/tvSummaryAge" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Age: " android:textColor="@color/black" android:textSize="17sp" android:layout_marginBottom="10dp"/>
+            <TextView android:id="@+id/tvSummaryEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email: " android:textColor="@color/black" android:textSize="17sp" android:layout_marginBottom="10dp"/>
+            <TextView android:id="@+id/tvSummaryType" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Account Type: " android:textColor="@color/black" android:textSize="17sp" android:layout_marginBottom="10dp"/>
+            <TextView android:id="@+id/tvSummaryKyc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="KYC Status: " android:textColor="@color/black" android:textSize="17sp" android:layout_marginBottom="15dp"/>
+            
+            <View android:layout_width="match_parent" android:layout_height="2dp" android:background="@color/bg_grey" android:layout_marginBottom="15dp"/>
+            
+            <TextView android:id="@+id/tvSummaryBranch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Branch: " android:textColor="@color/black" android:textSize="17sp" android:layout_marginBottom="10dp"/>
+            <TextView android:id="@+id/tvSummaryServices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Services: " android:textColor="@color/black" android:textSize="17sp" android:layout_marginBottom="10dp"/>
+            <TextView android:id="@+id/tvSummaryDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Date/Time: " android:textColor="@color/black" android:textSize="17sp" android:layout_marginBottom="10dp"/>
+            <TextView android:id="@+id/tvSummaryMode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mode: " android:textColor="@color/black" android:textSize="17sp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnModify"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="BACK TO EDIT"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/black"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="SUBMIT AND SAVE"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/blue_header"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+</ScrollView>

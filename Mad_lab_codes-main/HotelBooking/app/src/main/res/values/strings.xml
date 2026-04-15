@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Hotel Booking</string>
+    <string name="title_dashboard">Hotel Booking System</string>
+    <string name="book_room">Book Room</string>
+    <string name="view_bookings">View Bookings</string>
+    <string name="hotel_info">Hotel Info</string>
+    <string name="contact_help">Contact / Help</string>
+    <string name="guest_details">Guest Details</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="summary">Booking Summary</string>
+    <string name="room_type">Room Type</string>
+    <string name="single">Single</string>
+    <string name="double_room">Double</string>
+    <string name="suite">Suite</string>
+    <string name="confirm_booking">Confirm Booking?</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="modify">Modify</string>
+    <string name="delete">Delete</string>
+</resources>

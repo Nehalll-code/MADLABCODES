@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_white"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booking Details"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary_blue"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="4dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView android:id="@+id/tvDetName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvDetEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvDetRoom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Room Type: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvDetBranch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Branch: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvDetAmenities" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Amenities: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvDetDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Check-in: " android:textSize="16sp" android:layout_marginBottom="8dp"/>
+            <TextView android:id="@+id/tvDetSlot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Slot: " android:textSize="16sp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/delete"
+        android:backgroundTint="@color/error_red"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+</LinearLayout>
